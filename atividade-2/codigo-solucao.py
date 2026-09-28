@@ -14,6 +14,8 @@ def aplicarCupomSeguro():
   time.sleep(0.1)
   if temp > 0:
     temp -= 1
+  else: 
+    print(f"O número de cupons esgotou")
   cupons_disponiveis = temp
   trava.release()
 
